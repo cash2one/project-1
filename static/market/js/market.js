@@ -24,8 +24,16 @@ $(document).ready(function(){
         sortdiv.style.display = "none"
     },false)
 
-
-
+//xiu gai huangkuai
+    var lis = document.getElementsByClassName("my")
+    for (var i = 0; i < lis.length; i++){
+        li = lis[i]
+        li.addEventListener("click", function(){
+            pid = this.getAttribute("pa")
+            console.log(pid)
+            document.getElementById(pid).style.display = "block"
+        })
+    }
 
 
 
